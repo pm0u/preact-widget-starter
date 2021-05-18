@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+  },
+  "exclude": ["node_modules", "dist", "build", "tests"]
+}
