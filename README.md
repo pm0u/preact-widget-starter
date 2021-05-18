@@ -6,3 +6,4 @@ Some features included:
 - Automatic import of `h` and `Fragment` as needed (via jsx-preact-global)
 - Some eslint stuff I like
 - Some useful package json scripts
+- jsconfig for TS checking in JS files
