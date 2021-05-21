@@ -54,6 +54,8 @@ module.exports = {
     'max-len': [1, { code: 80 }],
     // error missing extensions if not js/jsx
     'import/extensions': [2, { js: 'never', jsx: 'never' }],
+    // Allow import of preact/hooks provided by preact
+    'import/no-extraneous-dependencies': 0,
     // allow empty returns
     'consistent-return': 0,
     // don't require importing react

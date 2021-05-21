@@ -20,7 +20,7 @@ module.exports = function jsxGlobal(babel) {
   visitor = {
     Program: {
       exit: function (path, state) {
-        if (state.get('jsxDetected')) {
+        if (state.get('jsxDetected') || state.get('jsxFragmentDetected')) {
           path.unshiftContainer('body', createImport('h'));
         }
         if (state.get('jsxFragmentDetected')) {
