@@ -5,6 +5,7 @@
     "jsxImportSource": "preact",
     "moduleResolution": "node",
     "strictNullChecks": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "exclude": ["node_modules", "dist", "build", "tests"]
 }
