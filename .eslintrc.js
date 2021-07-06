@@ -101,4 +101,14 @@ module.exports = {
     // warn for not listing all used variables in deps
     'react-hooks/exhaustive-deps': 1,
   },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
 }
