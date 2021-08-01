@@ -1,1 +1,1 @@
-export const Widget = () => <div>hi, im a widget</div>
+export const Widget = ({ hi }) => <div>{hi}, im a widget</div>

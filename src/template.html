@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title><% preact.title %></title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<style>
-			body {
-				padding-bottom: 100vh;
-				background: rgba(0, 0, 0, 0.60)
-			}
-			.preview {
-				margin: 80px 40px;
-				padding: 1rem;
-				border: 1px dashed rgba(255,255,255, 0.5);
-				position: relative;
-			}
 
-			.preview::before {
-				content: 'WIDGET PREVIEW';
-				position: absolute;
-				display: block;
-				top: -18px;
-				font-size: 11px;
-				color: rgba(255, 255, 255, 0.5);
-			}
-		</style>
-		<% preact.headEnd %>
-	</head>
-	<body class="bg-dark">
-		<div data-widget-host="habitat" class="preview" data-widget>
-			<script type="text/props">
-			  { "color": "red"}
+<head>
+	<meta charset="utf-8">
+	<title>
+		<% preact.title %>
+	</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		body {
+			padding-bottom: 100vh;
+			background: rgba(0, 0, 0, 0.60)
+		}
+
+		.preview {
+			margin: 80px 40px;
+			padding: 1rem;
+			border: 1px dashed rgba(255, 255, 255, 0.5);
+			position: relative;
+		}
+
+		.preview::before {
+			content: 'WIDGET PREVIEW';
+			position: absolute;
+			display: block;
+			top: -18px;
+			font-size: 11px;
+			color: rgba(255, 255, 255, 0.5);
+		}
+	</style>
+	<% preact.headEnd %>
+</head>
+
+<body class="bg-dark">
+	<div data-widget-host="habitat" class="preview" data-widget>
+		<script type="text/props">
+				{ "hi": "hey" }
 			</script>
-		</div>
-		<% preact.bodyEnd %>
-	</body>
+	</div>
+	<% preact.bodyEnd %>
+</body>
+
 </html>

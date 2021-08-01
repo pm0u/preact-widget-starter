@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "preact watch --template src/template.html",
     "build:pkg": "microbundle -i src/index.js --no-pkg-main -f iife --sourcemap false --external none",
+    "ssr": "microbundle -i src/ssr --no-pkg-main -f iife --sourcemap false --external none --output dist/ssr.js && node ./dist/ssr.js",
     "build:export": "microbundle -i src/index.js --no-pkg-main -f iife --no-sourcemap --external none --output",
     "watch:export": "microbundle -w -i src/index.js --define NODE_ENV='development' --no-pkg-main -f iife --external none --output",
     "lint": "eslint 'src/**/*.js'"
@@ -31,6 +32,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "microbundle": "^0.13.3",
+    "preact-render-to-string": "^5.1.19",
     "prettier": "^2.3.1",
     "typescript-plugin-css-modules": "^3.4.0"
   }
